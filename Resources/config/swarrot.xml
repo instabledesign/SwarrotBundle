@@ -80,6 +80,11 @@
             <argument>Swarrot\Processor\SignalHandler\SignalHandlerProcessor</argument>
             <argument type="service" id="swarrot.logger"/>
         </service>
+        <service id="swarrot.processor.x_death_max_count"
+                 class="Swarrot\SwarrotBundle\Processor\XDeath\XDeathMaxCountProcessorConfigurator">
+            <argument>Swarrot\Processor\XDeath\XDeathMaxCountProcessor</argument>
+            <argument type="service" id="swarrot.logger"/>
+        </service>
 
         <service id="swarrot.processor.insomniac"
                  class="Swarrot\SwarrotBundle\Processor\Insomniac\InsomniacProcessorConfigurator">
